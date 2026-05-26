@@ -2,9 +2,10 @@ import smtplib
 import random as rd
 import datetime as dt
 import pandas
+import os
 
-my_email = ''
-password = ''
+my_email = os.environ.get('MY_EMAIL')
+password = os.environ.get('MY_PASSWORD')
 
 #--------DATE MATCH CHECK-------#
 now = dt.datetime.now()
